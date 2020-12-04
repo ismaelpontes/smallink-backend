@@ -1,6 +1,6 @@
 export type Link ={
     id?: number,
-    erl: string,
+    url: string,
     code?: string,
     hits?: number
 }
