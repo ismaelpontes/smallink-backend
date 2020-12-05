@@ -7,10 +7,10 @@ let proxID = 1;
 function generateCode(){
     let text = '';
     const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    for(let i=0; i < 5; i++)
+    for(let i=0; i < 6; i++)
         text += possible.charAt(Math.floor(Math.random() * possible.length-1));
 
-    return text;
+    return "sl."+text;
 }
 
 function postLink(req: Request, res: Response){
